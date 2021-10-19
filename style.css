@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Airbnb Cereal App", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px -8px black;
+  margin: 25px auto;
+}
+.wrapper{
+  width: 90%;
+margin: 30px auto;
+}
+.container h1 {
+  font-size: 2.5em;
+}
+.container p {
+  font-size: 1em;
+  margin: 15px 0 35px;
+}
+.logo img {
+  width: 300px;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+}
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid rgb(235, 233, 233);
+  border-radius: 5px;
+}
+input:focus{
+  outline: none;
+}
+
+.input label {
+  font-weight: bold;
+  font-size: 1em;
+}
+.text1 {
+  color: rgb(247, 96, 96);
+  background-color: rgb(247, 222, 222);
+  padding: 10px;
+  width: 100%;
+  font-size: 12px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.btn {
+  padding: 17px 100px;
+  width: 100%;
+  background-color: rgb(54, 76, 141);
+  border: none;
+  outline: none;
+  margin: 20px 0;
+  color: white;
+  font-size: 1.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.btn:hover {
+  background-color: rgb(69, 185, 231) ;
+  transition: all 1s ease-in-out;
+  color: black;
+}
+.checkBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mark {
+  display: flex;
+  align-items: center;
+}
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(221, 236, 241);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+input[type="checkbox"]:after {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  color: skyblue;
+  display: none;
+}
+input[type="checkbox"]:checked:after {
+  display: block;
+}
+input::placeholder {
+  color: lightgrey;
+  font-size: 1em;
+}
+.mark label,
+.text2 {
+  font-size: 16px;
+  text-decoration: none;
+}
+.text2 {
+  color: rgba(54, 76, 141, 0.8);
+}
+
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+    margin: 8px auto;
+  }
+  .wrapper{
+    width: 100%;
+    padding: 0px 30px;
+  }
+  .container h1 {
+    font-size: 2.2em;
+    margin-top: 10px;
+  }
+  .logo img {
+    width: 200px;
+  }
+  .btn {
+    padding: 15px 100px;
+  }
+  .mark label,
+  .text2 {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  
+  .container h1 {
+    font-size: 1.6em;
+  }
+  .wrapper{
+    padding: 0px 15px;
+  }
+}
